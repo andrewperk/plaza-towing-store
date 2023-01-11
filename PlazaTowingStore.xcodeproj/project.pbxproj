@@ -11,6 +11,7 @@
 		7D99ABA7296E771D00C23B4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D99ABA6296E771D00C23B4F /* ContentView.swift */; };
 		7D99ABA9296E771F00C23B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D99ABA8296E771F00C23B4F /* Assets.xcassets */; };
 		7D99ABAC296E771F00C23B4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D99ABAB296E771F00C23B4F /* Preview Assets.xcassets */; };
+		7D99ABB3296E79C200C23B4F /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D99ABB2296E79C200C23B4F /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7D99ABA6296E771D00C23B4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D99ABA8296E771F00C23B4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D99ABAB296E771F00C23B4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D99ABB2296E79C200C23B4F /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				7D99ABA6296E771D00C23B4F /* ContentView.swift */,
 				7D99ABA8296E771F00C23B4F /* Assets.xcassets */,
 				7D99ABAA296E771F00C23B4F /* Preview Content */,
+				7D99ABB2296E79C200C23B4F /* ItemDetailView.swift */,
 			);
 			path = PlazaTowingStore;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D99ABB3296E79C200C23B4F /* ItemDetailView.swift in Sources */,
 				7D99ABA7296E771D00C23B4F /* ContentView.swift in Sources */,
 				7D99ABA5296E771D00C23B4F /* PlazaTowingStoreApp.swift in Sources */,
 			);
