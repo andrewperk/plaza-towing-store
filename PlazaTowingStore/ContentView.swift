@@ -11,21 +11,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Cars Clearing Lien")
+                Text("Current Inventory")
                     .font(.title)
                     .padding()
                 Spacer()
                 NavigationLink(
-                    destination: ItemDetailView(itemName: "2011 Cadillac Escalade"),
+                    destination: ItemDetailView(itemName: "Plaza Hat"),
                     label: {
-                        Text("2011 Cadillac Escalade")
+                        Text("Plaza Hat")
                     }
                 )
                 Spacer()
             }
+            .navigationTitle(Text("Plaza Towing Store"))
+            .navigationBarTitleDisplayMode(.inline)
         }
-        
-        
     }
 }
 

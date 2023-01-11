@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ItemDetailView: View {
+    @State var quantityRemaining = Int.random(in: 1...10)
     let itemName: String
     
     var body: some View {
@@ -19,20 +20,27 @@ struct ItemDetailView: View {
             Image(systemName: "photo")
                 .font(.system(size: 200))
                 .padding()
-            Text("Release Date: 01/23/2023")
+            Text("Quantity Remaining: \(quantityRemaining)")
             Spacer()
             Button {
-                print("Button tapped")
+                if quantityRemaining > 0 {
+                    quantityRemaining -= 1
+                }
             } label: {
-                Text("Get quote")
+                Text("Add to Cart")
             }
             Spacer()
         }
+        .background(
+            NavigationLink(destination: Text("You bought all the \(itemName)!"),
+                           isActive: .constant(quantityRemaining == 0),
+                           label: { EmptyView() })
+        )
     }
 }
 
 struct ItemDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemDetailView(itemName: "2011 Cadillac Escalade")
+        ItemDetailView(itemName: "Plaza Hat")
     }
 }
